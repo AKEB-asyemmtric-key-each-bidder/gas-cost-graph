@@ -16,7 +16,6 @@ plt.legend()
 # Add labels and title to the plot
 plt.xlabel('x-axis')
 plt.ylabel('y-axis')
-plt.title('Comparison of the Proposed Methodology and Galal')
 
 # Display the plot
 plt.show()
