@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Generate some data points for the functions
 x = np.linspace(1, 30, 10000)
-y1 = 103435 + 4834050/x
+y1 = 183315 + 4834050/x
 y2 = 122480 + 2167802/x
 
 # Plot the functions
