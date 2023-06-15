@@ -2,17 +2,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 # Print data
 def logOutputs(upperRange):
+    avg = 0
     for i in range(2,upperRange):
         print(i)
         myValue = 122480 + 2167802/i 
         GalaValue = 183315 + 4834050/i
+        percentage = ( 1- (myValue / GalaValue)) * 100
+        avg += percentage
         print("my: ",myValue)
         print("Galal: ",GalaValue)
-        print("%", ( 1- (myValue / GalaValue)) * 100)
+        print("%", percentage)
         print()
         print("*******")
+    
+    print("AVG", avg / (upperRange - 1))
 
-logOutputs(100)
+logOutputs(15)
 
 # Generate some data points for the functions
 x = np.linspace(1, 30, 10000)
