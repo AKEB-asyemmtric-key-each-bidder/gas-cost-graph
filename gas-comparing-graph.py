@@ -1,5 +1,7 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+
 # Print data
 def logOutputs(upperRange):
     avg = 0
@@ -20,7 +22,7 @@ def logOutputs(upperRange):
 logOutputs(15)
 
 # Generate some data points for the functions
-x = np.linspace(1, 30, 10000)
+x = np.linspace(1, 100, 10000)
 y1 = 183315 + 4834050/x
 y2 = 122480 + 2167802/x
 
